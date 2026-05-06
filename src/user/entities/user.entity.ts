@@ -8,7 +8,7 @@ export class User {
     @Column({name: 'last_name'})
     lastName: string;
 
-    @Column()
+    @Column({select: false})
     password: string;
 
     @Column({name: 'last_logged_in_at'})
